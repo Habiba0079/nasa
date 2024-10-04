@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: "cinzel" , sans-serif;
+    /* height: 100%;
+    overflow: auto; */
+
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    /*overflow:hidden*/
+    height: 100%; 
+    background-color: #131416;
+}

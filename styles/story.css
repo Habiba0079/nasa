@@ -1,0 +1,267 @@
+@import url("/styles/rules.css");
+@import url("/styles/header.css");
+@import url("/styles/font.css");
+
+html{
+    background-color:  #e0d299;
+}
+
+
+/*
+header
+*/
+.header-links{
+    color: #131416;
+}
+.web-name{
+    color: #131416;
+}
+/*colors*/
+
+.beige{
+    background-color: #e0d299;
+}
+
+.graysh{
+    background-color: #cdc49a;
+
+}
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: #eee;
+    margin: 10px 0;
+    
+
+}
+.web-name{
+    display: none;
+}
+
+.menu-button{
+    display: block;
+}
+
+.hideOnMobile{
+    display: none;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.title h1 {
+    font-size: 2em;
+    font-family: "warnock";
+    color: #131416;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-align: left;
+}
+.title h2 {
+
+    font-size: 1em;
+    font-family: "warnock";
+    font-style: italic;
+    font-weight: lighter;
+    color: #131416;
+    line-height: 1em;
+    text-align: left;
+    margin-left: 5px;
+    
+}
+
+.gold-line{
+    position: relative;
+}
+.gold-line h2::before, .gold-line span::before{
+    content: ' ';
+    height: 90%;
+    position: absolute;
+    width: 2px;
+    background-color: #dca11d;
+    bottom: 0;
+    left: 0;
+}
+.poster{
+    width: 50%;
+}
+ .title{
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.poster img {
+    width: 100%;
+    
+}
+
+
+
+/*section*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+/* .content-story, .section-img {
+    width: 100%;
+} */
+
+
+.content-story p{
+    font-size: 1.2em;
+    font-family: "warnock";
+    line-height: 1.5em;
+    text-align: center;
+    padding: 20px;
+    color: #131416;
+
+}
+.content-story h2{
+    font-size: 1.6em;
+    font-family: "warnock";
+    color: #131416;
+    line-height: 1em;
+    text-align: center;
+    padding: 20px ;
+}
+
+
+.section-img img{
+    width: 100%;
+    /*flip image horizontal*/
+    transform: scaleX(-1);
+}
+
+.quote span{
+    font-style: italic;
+    font-family: "warnock";
+    font-weight: lighter;
+    line-height: 23px;
+    
+}
+.gold-border{
+    border-left: 2px solid #dca11d;
+    margin: 1em 3em;
+    padding-left: 1em;
+}
+
+blockquote{
+    text-align: center;
+    width: fit-content;
+}
+
+
+.language-selector {
+    margin: 10px;
+    text-align: center;
+}
+
+.language-selector button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.en-text, .ar-text {
+    font-size: 18px;
+}
+
+
+/*screens more than 1024px*/
+@media screen  and (min-width: 1024px){
+    .web-name{
+        display: block;
+    }
+
+    .menu-button{
+        display: none;
+    }
+    
+    .hideOnMobile{
+        display:  initial;
+    }
+    .line{
+        display: none;
+    }
+    
+}
+
+
+/*screen from */
+@media screen  and (min-width: 480px) and (max-width: 768px){
+    .title h1{
+        font-size: 2.5em;
+    }
+    .title h2{
+        font-size: 1.5em;
+    }
+
+
+
+}
+@media screen  and (min-width: 768px){
+    .title h1{
+        font-size: 5em;
+
+    }
+    .beige{
+        flex-direction: row-reverse;
+
+    }
+    .title h2{
+        font-size: 3em;
+    }
+    .container{
+        flex-wrap: nowrap;
+        align-items: center;
+
+    }
+  .content-story{
+        width: 50%;
+        padding: 20px;
+
+  }
+
+  .section-img {
+    width: 60%;
+    align-self: center;
+  }
+
+
+    .content-story p{
+        text-align: justify;
+        padding: 0;
+        font-size: 1.3em;
+        padding-bottom: 15px;
+
+        
+    }
+    .content-story h2{
+        text-align: left;
+        padding:0 0 20px 0;
+        font-size: 2em;
+    }
+
+    blockquote{
+        text-align: initial;
+        width: fit-content;
+    }
+}
+/*screens mor than 480px */
+@media screen  and (min-width: 480px){
+
+
+}
+
+    

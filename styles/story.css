@@ -6,7 +6,11 @@ html{
     background-color:  #e0d299;
 }
 
-
+.ar-text {
+    text-align: right;
+    direction: rtl; 
+}
+ 
 /*
 header
 */
@@ -87,6 +91,7 @@ header
 }
 .poster{
     width: 50%;
+    padding-right: 5%;
 }
  .title{
     width: 50%;
@@ -112,9 +117,6 @@ header
     padding: 10px;
     width: 100%;
 }
-/* .content-story, .section-img {
-    width: 100%;
-} */
 
 
 .content-story p{
@@ -135,20 +137,13 @@ header
     padding: 20px ;
 }
 
-
+.section-img{
+    margin: 0 2%;
+}
 .section-img img{
     width: 100%;
-    /*flip image horizontal*/
-    transform: scaleX(-1);
 }
 
-.quote span{
-    font-style: italic;
-    font-family: "warnock";
-    font-weight: lighter;
-    line-height: 23px;
-    
-}
 .gold-border{
     border-left: 2px solid #dca11d;
     margin: 1em 3em;

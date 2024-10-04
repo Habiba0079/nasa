@@ -3,7 +3,7 @@
 @import url("/styles/font.css");
 
 html{
-    background-color:  #e0d299;
+    background-color:  #857b56;
 }
 
 .ar-text {
@@ -23,11 +23,11 @@ header
 /*colors*/
 
 .beige{
-    background-color: #e0d299;
+    background-color: #857b56;
 }
 
 .graysh{
-    background-color: #cdc49a;
+    background-color: #657041;
 
 }
 .line{
@@ -120,7 +120,7 @@ header
 
 
 .content-story p{
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: "warnock";
     line-height: 1.5em;
     text-align: center;
@@ -163,14 +163,25 @@ blockquote{
 
 .language-selector button {
     margin: 5px;
-    padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    border: 1px solid #dca11d;
+    color: #eee;
+    background-color: transparent;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: "cinzel";
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 2px;
+}
+.language-selector button:hover{
+    letter-spacing: 3px;
+    background-color: #dca11d;
+    color: #131416;
 }
 
-.en-text, .ar-text {
-    font-size: 18px;
-}
 
 
 /*screens more than 1024px*/
